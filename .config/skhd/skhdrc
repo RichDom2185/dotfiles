@@ -1,0 +1,5 @@
+ctrl + alt - x : yabai -m window --toggle float
+ctrl + alt - z : yabai -m space --balance
+ctrl + alt - r : yabai --restart-service
+alt - f : yabai -m window --toggle native-fullscreen
+ctrl + alt - backspace : yabai -m window --toggle split
