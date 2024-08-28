@@ -1,0 +1,64 @@
+[env]
+TERM = "xterm-256color"
+
+[[colors.indexed_colors]]
+color = "#24292e"
+index = 236
+
+[[colors.indexed_colors]]
+color = "#2b3036"
+index = 237
+
+[colors.primary]
+background = "#24292e"
+foreground = "#c5c8c6"
+
+[cursor]
+blink_interval = 400
+unfocused_hollow = false
+
+[font]
+size = 14
+
+[font.normal]
+family = "JetBrains Mono"
+
+[font.offset]
+x = 1
+y = 2
+
+
+[window]
+opacity = 0.92
+blur = true
+decorations = "Transparent"
+
+[window.position]
+# hiDPI (Retina) mean values are multiplied by 2
+x = 90 # 45pt
+y = 130 # 65pt
+
+[window.dimensions]
+columns = 150
+lines = 50
+
+[window.padding]
+x = 16
+# To account for transparent title bar
+y = 28
+
+# Other settings
+[scrolling]
+multiplier = 2
+
+# https://alacritty.org/config-alacritty.html
+# https://github.com/alacritty/alacritty/issues/5246#issuecomment-1878166299
+[[hints.enabled]]
+command = "open" # On macOS
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+mouse.mods = "Command"
+binding = { key = "U", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
