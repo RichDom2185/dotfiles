@@ -1,0 +1,21 @@
+### RULES
+### === MUST COME BEFORE CONFIG ===
+
+# See https://github.com/koekeishiya/yabai/blob/master/CHANGELOG.md#removed
+yabai -m rule --add app!="^(Google Chrome|Code|Safari|WhatsApp|Telegram A)$" manage=off
+yabai -m rule --apply
+
+
+### CONFIG
+
+yabai -m config top_padding    6
+yabai -m config bottom_padding 6
+yabai -m config left_padding   6
+yabai -m config right_padding  6
+yabai -m config window_gap     8
+
+yabai -m config mouse_modifier ctrl
+
+yabai -m config layout bsp
+
+$HOME/Documents/Playground/JankyBorders/bin/borders active_color=0xff169fff inactive_color=0xff1f252c width=5.0 &
