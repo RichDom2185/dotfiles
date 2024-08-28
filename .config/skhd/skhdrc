@@ -12,3 +12,5 @@ ctrl + shift - left: SEL="$(yabai -m query --windows --window | jq .id)"; \
                      yabai -m window --space prev && \
                      skhd -k "ctrl - left" && \
                      yabai -m window --focus $SEL
+
+cmd + alt - n : alacritty
